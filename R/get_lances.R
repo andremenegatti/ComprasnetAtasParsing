@@ -18,8 +18,10 @@ get_lances <- function(html_doc, item_id, quietly = TRUE) {
   table_node <- html_node(html_doc,
                           xpath = str_c('//body/table/tbody/tr/td[contains(text(), "Item: ', item_id, ' - ")]/../following-sibling::tr[2]/td/table/tbody/tr/td/b[text()="Lances "]/ancestor::table[1]'))
 
-  if (length(table_node) == 0 & !quietly) {
-    message(str_c(' ---- Historico de lances do Item ', item_id, ' nao encontrado'))
+  if (length(table_node) == 0) {
+    if (!quietly) {
+      message(str_c(' ---- Historico de lances do Item ', item_id, ' nao encontrado'))
+    }
     return(NA)
   }
 
