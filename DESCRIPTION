@@ -1,12 +1,14 @@
 Package: ComprasnetAtasParsing
 Type: Package
-Title: Facilita extracao de dados contidos em atas de pregoes eletronicos do Comprasnet
+Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Andre Luis Menegatti
-Description: Este pacote tem o objetivo de facilitar a extracao de dados a partir do codigo html de atas de pregoes eletronicos do Comprasnet.
-    O pacote e composto por uma serie de funcoes que capturam informacoes especificas, bem como wrappers que buscam simplificar a extracao dos dados.
-License: GLP-3
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Suggests: testthat
 Depends: dplyr, purrr, stringr, rvest
