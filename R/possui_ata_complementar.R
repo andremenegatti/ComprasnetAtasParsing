@@ -10,7 +10,7 @@
 #'
 #' @examples
 possui_ata_complementar <- function(html_doc) {
-  html_node(html_doc, xpath = '/html/body/table/tbody/tr/td[2]') %>%
+  html_node(html_doc, xpath = '/html/body/table//tr/td[2]') %>%
     html_text() %>%
     str_detect('Este preg.*o possui \\d+')
 }

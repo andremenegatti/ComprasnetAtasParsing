@@ -9,14 +9,16 @@
 #' @export
 #'
 #' @examples
-get_propostas <- function(html_doc, item_id) {
+get_propostas <- function(html_doc, item_id, quietly = TRUE) {
 
-  message(str_c(' ---- Capturando propostas do Item ', item_id))
+  if (!quietly) {
+    message(str_c(' ---- Capturando propostas do Item ', item_id))
+  }
 
   table_node <- html_node(html_doc,
                           xpath = str_c('//body/table/tbody/tr/td[contains(text(), "Item: ', item_id, ' - ")]/../following-sibling::tr[1]/td/table/tbody/tr/td/b[text()="Propostas"]/ancestor::table[1]'))
 
-  if (length(table_node) == 0) {
+  if (length(table_node) == 0 & !quietly) {
     message(str_c(' ---- Propostas do Item ', item_id, ' nao encontradas'))
     return(NA)
   }
