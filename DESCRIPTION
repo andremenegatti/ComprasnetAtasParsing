@@ -3,7 +3,6 @@ Type: Package
 Title: Facilita extracao de dados contidos em atas de pregoes eletronicos do Comprasnet
 Version: 0.1.0
 Author: Andre Luis Menegatti
-Maintainer: Andre Luis Menegatti
 Description: Este pacote tem o objetivo de facilitar a extracao de dados a partir do codigo html de atas de pregoes eletronicos do Comprasnet.
     O pacote e composto por uma serie de funcoes que capturam informacoes especificas, bem como wrappers que buscam simplificar a extracao dos dados.
 License: GLP-3
