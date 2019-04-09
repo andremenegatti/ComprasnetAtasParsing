@@ -1,11 +1,12 @@
 Package: ComprasnetAtasParsing
 Type: Package
-Title: Ferramentas para extracao de dados de atas de pregoes eletronicos do Comprasnet (Title Case)
+Title: Ferramentas para extracao de dados de atas de pregoes eletronicos do Comprasnet
 Version: 0.1.0
 Author: Andre Luis Menegatti
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Andre Luis Menegatti <andre.menegatti@usp.br>
+Description: Funcoes para facilitar a extracao de dados a partir do html de atas de pregoes eletronicos do Comprasnet.
+    Em linhas gerais, o pacote e composto por uma serie de funcoes que capturam informacoes especificas dos pregoes e wrappers que buscam simplificar a automatizacao da coleta de dados.
+    Alem disso, o pacote tambem define algumas funcoes para facilitar a implementacao de loops para coleta de dados de varias atas, de forma sequencial e tambem usando computacao em paralelo.
 License: GLP-3
 Encoding: UTF-8
 LazyData: true
