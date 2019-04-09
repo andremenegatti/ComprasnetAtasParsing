@@ -7,8 +7,6 @@
 #'
 #' @return dataframe com o historico de lances, contendo cnpj do fornecedor, valor do lance e horario em que o lance foi registrado. Em alguns casos, o dataframe tambem contem informacoes adicionais como desconto, valor com desconto, fator de equalizacao e/ou valor equalizado
 #' @export
-#'
-#' @examples
 get_lances <- function(html_doc, item_id, quietly = TRUE) {
 
   if (!quietly) {

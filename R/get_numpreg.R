@@ -8,8 +8,6 @@
 #'
 #' @return String de 10 digitos com o numero do pregao
 #' @export
-#'
-#' @examples
 get_numpreg <- function(html_doc, possui_ata_complementar = NA) {
 
   if (is.na(possui_ata_complementar)) {

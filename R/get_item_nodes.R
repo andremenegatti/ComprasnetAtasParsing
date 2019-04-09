@@ -6,8 +6,6 @@
 #'
 #' @return nodeset com todos os nodes de itens listados no inicio da ata
 #' @export
-#'
-#' @examples
 get_item_nodes <- function(html_doc, possui_ata_complementar = NA) {
 
   if (is.na(possui_ata_complementar)) {

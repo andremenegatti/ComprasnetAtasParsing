@@ -5,8 +5,6 @@
 #'
 #' @return dataframe com os lances de desempate ou string 'Sem lances de desempate'. Na maior parte dos pregoes, nao ha lances de desempate
 #' @export
-#'
-#' @examples
 get_lances_desempate_ME_EPP <- function(html_doc, item_id) {
 
   table_node <- html_node(html_doc,

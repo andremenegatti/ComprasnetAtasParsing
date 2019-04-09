@@ -5,9 +5,8 @@
 #'   complementar ou nao; se NA, a funcao ira verificar no html da ata
 #'
 #' @return String de 6 digitos com o codigo da UASG
-#' @export
 #'
-#' @examples
+#' @export
 get_couasg <- function(html_doc, possui_ata_complementar = NA) {
 
   if (is.na(possui_ata_complementar)) {

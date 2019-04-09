@@ -4,8 +4,6 @@
 #'
 #' @return numeric
 #' @export
-#'
-#' @examples
 limpar_valores <- function(string) {
 
   str_extract(string,

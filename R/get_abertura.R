@@ -5,6 +5,7 @@
 #'   complementar ou nao; se NA, a funcao ira verificar no html da ata
 #'
 #' @return String com o paragrafo inicial da ata
+#' @export
 #'
 get_abertura <- function(html_doc, possui_ata_complementar = NA) {
 

@@ -10,7 +10,7 @@ options(digits.secs = 3)
 #' @return Se as_character = TRUE, retorna uma string de caracteres com a data
 #'   em formato ISO-8601. Se as_character = FALSE, retorna objeto datetime
 #'
-#' @examples
+#' @export
 toISOdate <- function(date_string, as_character = TRUE) {
 
   if (as_character) {

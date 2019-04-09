@@ -6,8 +6,6 @@
 #'
 #' @return character string com data e hora de abertura do pregao
 #' @export
-#'
-#' @examples
 get_data <- function(x) {
 
   if (!any(class(x) %in% c('character', 'xml_document'))) {

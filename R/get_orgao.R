@@ -12,8 +12,6 @@
 #'   o orgao esteja disponivel na ata, as linhas sao separadas por
 #'   ponto-e-virgula.
 #' @export
-#'
-#' @examples
 get_orgao <- function(html_doc, possui_ata_complementar = NA) {
 
   if (is.na(possui_ata_complementar)) {

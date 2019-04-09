@@ -1,4 +1,3 @@
-
 xpaths <-  list(
   item_id = 'self::td',
   descricao  =  'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../../../tr[1]/td',

@@ -4,8 +4,6 @@
 #'
 #' @return Retorna um dataframe com informacoes sobre os eventos registrados na ata
 #' @export
-#'
-#' @examples
 get_bid_events <- function(html_doc) {
 
   table <- html_node(html_doc,

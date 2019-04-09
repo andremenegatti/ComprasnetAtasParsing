@@ -3,9 +3,8 @@
 #' @param resultado character string com o resultado de um item, tal como disponivel no comeco das atas
 #'
 #' @return numeric
-#' @export
 #' @seealso para capturar texto de resultado a partir do html, ver get_item_info e get_item_info_chr
-#' @examples
+#' @export
 get_melhor_lance <- function(resultado) {
 
   if (class(resultado) != 'character') {

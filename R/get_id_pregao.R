@@ -7,9 +7,8 @@
 #'   complementar ou nao; se NA, a funcao ira verificar no html da ata
 #'
 #' @return string com o numero identificador de 16 digitos
-#' @export
 #'
-#' @examples
+#' @export
 get_id_pregao <- function(html_doc, possui_ata_complementar = NA) {
 
   if (is.na(possui_ata_complementar)) {

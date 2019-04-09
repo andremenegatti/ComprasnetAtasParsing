@@ -13,9 +13,8 @@
 #' @param item_info string com a informacao a ser capturada
 #'
 #' @return dataframe com as informacoes
-#' @export
 #' @seealso Para capturar informacoes referentes a itens de uma ata, ver get_bid_info_dfs
-#' @examples
+#' @export
 get_item_info_df <- function(html_doc, id_item, item_info) {
 
   if (!item_info %in% c("propostas", "lances", "lances_desempate_ME_EPP", "eventos_item")) {

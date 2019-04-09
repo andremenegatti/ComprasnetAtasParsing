@@ -4,9 +4,8 @@
 #' @param item_id string com o numero do item
 #'
 #' @return dataframe com o registro de eventos do item
-#' @export
 #'
-#' @examples
+#' @export
 get_item_events <- function(html_doc, item_id) {
 
   table_node <- html_node(html_doc,

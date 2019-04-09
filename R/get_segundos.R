@@ -7,8 +7,6 @@
 #'
 #' @return
 #' @export
-#'
-#' @examples
 get_segundos <- function(date_string, iso_input = FALSE) {
 
   if (iso_input == FALSE) {

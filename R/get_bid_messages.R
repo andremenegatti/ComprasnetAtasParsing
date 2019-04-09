@@ -3,9 +3,8 @@
 #' @param html_doc documento xml referente a ata de um pregao eletronico
 #'
 #' @return dataframe com registro das trocas de mensagens
-#' @export
 #'
-#' @examples
+#' @export
 get_bid_messages <- function(html_doc) {
 
   table <- html_node(html_doc,

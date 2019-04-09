@@ -7,8 +7,6 @@
 #'
 #' @return dataframe com dados sobre as propostas
 #' @export
-#'
-#' @examples
 get_propostas <- function(html_doc, item_id, quietly = TRUE) {
 
   if (!quietly) {

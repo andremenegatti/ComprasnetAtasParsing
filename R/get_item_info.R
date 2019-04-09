@@ -6,9 +6,8 @@
 #' @param item_info vetor com informacoes a serem capturadas
 #'
 #' @return Lista com strings e dataframes
-#' @export
 #'
-#' @examples
+#' @export
 get_item_info <- function(item_node, item_info = c('item_id', 'descricao', 'descricao_complementar', 'quantidade',
                                               'valor_estimado', 'unidade_fornecimento', 'tratamento_diferenciado',
                                               'decreto_7174', 'margem_preferencia', 'situacao', 'resultado',

@@ -7,9 +7,8 @@
 #' @param mensagens se TRUE, mensagens do pregao serao capturadas
 #'
 #' @return dataframe com as informacoes
-#' @export
 #' @seealso Para capturar informacoes referentes a itens de uma ata, ver get_item_info
-#' @examples
+#' @export
 get_bid_info <- function(html_doc, eventos = FALSE, mensagens = FALSE) {
 
   ata_comp <- possui_ata_complementar(html_doc)
