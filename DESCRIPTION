@@ -10,5 +10,5 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
-Depends: dplyr, purrr, stringr, rvest
-Imports: lubridate
+Depends: dplyr, purrr, stringr, rvest, xml2
+Imports: lubridate, doParallel, parallel, foreach
