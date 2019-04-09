@@ -11,6 +11,9 @@ get_segundos(date_string, iso_input = FALSE)
 
 \item{iso_input}{boolean indicando se o argumento date_string esta em formato ISO-8601 ou nao}
 }
+\value{
+segundos
+}
 \description{
 Funcao util para avaliar intervalo entre lances com precisao.
 }

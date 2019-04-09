@@ -2,7 +2,7 @@
 % Please edit documentation in R/possui_ata_complementar.R
 \name{possui_ata_complementar}
 \alias{possui_ata_complementar}
-\title{Verifica se a ata e de um pregao que possui atas complementares ou nao}
+\title{Verifica se o pregao da ata passada como argumento possui atas complementares ou nao.}
 \usage{
 possui_ata_complementar(html_doc)
 }
@@ -13,6 +13,5 @@ possui_ata_complementar(html_doc)
 Retorna TRUE se o pregao possui ata complementar e FALSE caso contrario.
 }
 \description{
-Verifica se o pregao da ata passada como argumento possui atas complementares ou nao.
 Importante pois a existencia de atas complementares muda a estrutura do codigo html.
 }

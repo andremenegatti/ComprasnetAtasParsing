@@ -4,7 +4,7 @@
 \alias{get_propostas}
 \title{Captura propostas do item}
 \usage{
-get_propostas(html_doc, item_id)
+get_propostas(html_doc, item_id, quietly = TRUE)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}

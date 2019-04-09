@@ -4,7 +4,7 @@
 \alias{get_lances}
 \title{Captura historico de lances do item}
 \usage{
-get_lances(html_doc, item_id)
+get_lances(html_doc, item_id, quietly = TRUE)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}
