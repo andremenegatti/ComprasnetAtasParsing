@@ -9,5 +9,5 @@ xpaths <-  list(
   decreto_7174  = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../../..//td//*[contains(text(),"Decreto 7174:")]/..',
   margem_preferencia  = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../../..//td//*[contains(text(),"Margem de Prefer")]/..',
   situacao  = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../../..//td//*[contains(text(),"Situa")]/..',
-  resultado = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../ancestor::table[2]/following-sibling::table[1]'
+  resultado = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../ancestor::table[2]/following-sibling::table[1]/tbody/tr[@bgcolor="#FFFFFF"]/../..'
   )
