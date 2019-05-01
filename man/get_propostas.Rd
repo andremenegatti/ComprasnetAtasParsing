@@ -4,12 +4,12 @@
 \alias{get_propostas}
 \title{Captura propostas do item}
 \usage{
-get_propostas(html_doc, item_id, quietly = TRUE)
+get_propostas(html_doc, indice_item, quietly = TRUE)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}
 
-\item{item_id}{string com o numero do item}
+\item{indice_item}{string com o numero do item}
 }
 \value{
 dataframe com dados sobre as propostas

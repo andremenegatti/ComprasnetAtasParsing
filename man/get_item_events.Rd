@@ -4,12 +4,12 @@
 \alias{get_item_events}
 \title{Captura o registro de eventos especificos ao item}
 \usage{
-get_item_events(html_doc, item_id)
+get_item_events(html_doc, indice_item)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}
 
-\item{item_id}{string com o numero do item}
+\item{indice_item}{string com o numero do item}
 }
 \value{
 dataframe com o registro de eventos do item

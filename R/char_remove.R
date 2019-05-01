@@ -1,5 +1,5 @@
 char_remove <- list(
-  item_id = 'Item: |\\r|\\n',
+  indice_item = 'Item: |\\r|\\n',
   descricao = 'Descri.{2,4}o: ',
   descricao_complementar = 'Descri.{2,4}o Complementar: ',
   quantidade = 'Quantidade: ',

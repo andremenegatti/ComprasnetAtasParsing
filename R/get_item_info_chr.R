@@ -11,7 +11,7 @@
 get_item_info_chr <- function(item_node, item_info) {
 
   if (!item_info %in% names(xpaths)) {
-    stop("o argumento \'item_info\' deve ser um dos seguintes: (i) item_id; (ii) descricao; (iii) descricao_complementar;
+    stop("o argumento \'item_info\' deve ser um dos seguintes: (i) indice_item; (ii) descricao; (iii) descricao_complementar;
          (iv) quantidade; (v) valor_estimado; (vi) unidade_fornecimento; (viii) tratamento_diferenciado; (ix) decreto_7174;
          (x) margem_preferencia; or (xi) situacao.")
   }

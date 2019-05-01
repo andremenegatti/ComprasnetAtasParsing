@@ -4,12 +4,12 @@
 \alias{get_lances_desempate_ME_EPP}
 \title{Captura registro de lances de desempate de microempresa ou empresa de pequeno porte}
 \usage{
-get_lances_desempate_ME_EPP(html_doc, item_id)
+get_lances_desempate_ME_EPP(html_doc, indice_item)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}
 
-\item{item_id}{string com o numero do item}
+\item{indice_item}{string com o numero do item}
 }
 \value{
 dataframe com os lances de desempate ou string 'Sem lances de desempate'. Na maior parte dos pregoes, nao ha lances de desempate

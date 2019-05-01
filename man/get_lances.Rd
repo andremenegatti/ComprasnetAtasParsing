@@ -4,12 +4,12 @@
 \alias{get_lances}
 \title{Captura historico de lances do item}
 \usage{
-get_lances(html_doc, item_id, quietly = TRUE)
+get_lances(html_doc, indice_item, quietly = TRUE)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}
 
-\item{item_id}{string com o numero do item}
+\item{indice_item}{string com o numero do item}
 }
 \value{
 dataframe com o historico de lances, contendo cnpj do fornecedor, valor do lance e horario em que o lance foi registrado. Em alguns casos, o dataframe tambem contem informacoes adicionais como desconto, valor com desconto, fator de equalizacao e/ou valor equalizado

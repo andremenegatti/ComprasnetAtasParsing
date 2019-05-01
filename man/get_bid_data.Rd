@@ -5,7 +5,7 @@
 \title{Capturar dados do pregao}
 \usage{
 get_bid_data(html_doc, eventos = FALSE, mensagens = FALSE,
-  item_info = c("item_id", "descricao", "descricao_complementar",
+  item_info = c("indice_id", "descricao", "descricao_complementar",
   "quantidade", "valor_estimado", "unidade_fornecimento",
   "tratamento_diferenciado", "decreto_7174", "margem_preferencia",
   "situacao", "resultado", "propostas", "lances"))
@@ -17,7 +17,7 @@ get_bid_data(html_doc, eventos = FALSE, mensagens = FALSE,
 
 \item{mensagens}{se TRUE, mensagens do pregao serao capturadas}
 
-\item{item_info}{vetor de strings contendo as informacoes que serao capturadas, podendo incluir: 'item_id', 'descricao', 'descricao_complementar', 'quantidade', 'valor_estimado', 'unidade_fornecimento', 'tratamento_diferenciado', 'decreto_7174', 'margem_preferencia', 'situacao', 'resultado', 'propostas', 'lances', 'lances_desempate_ME_EPP', e 'eventos_item'}
+\item{item_info}{vetor de strings contendo as informacoes que serao capturadas, podendo incluir: 'indice_id', 'descricao', 'descricao_complementar', 'quantidade', 'valor_estimado', 'unidade_fornecimento', 'tratamento_diferenciado', 'decreto_7174', 'margem_preferencia', 'situacao', 'resultado', 'propostas', 'lances', 'lances_desempate_ME_EPP', e 'eventos_item'}
 }
 \value{
 Retorna um uma tibble, com estrutura de dataframe aninhado. Os dados referentes aos itens do pregao ficam na coluna 'dados', em um novo dataframe. Para cada item desse segundo dataframe, dados como historico de lances e propostas sao incluidos em uma terceira camada de dataframes aninhados.

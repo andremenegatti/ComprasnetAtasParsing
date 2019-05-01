@@ -4,12 +4,12 @@
 \alias{get_lances_clean}
 \title{Captura historico de lances do item e limpa os dados}
 \usage{
-get_lances_clean(html_doc, item_id, clean = TRUE)
+get_lances_clean(html_doc, indice_item, clean = TRUE)
 }
 \arguments{
 \item{html_doc}{documento xml referente a ata de um pregao eletronico}
 
-\item{item_id}{string com o numero do item}
+\item{indice_item}{string com o numero do item}
 
 \item{clean}{boolean}
 }

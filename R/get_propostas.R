@@ -3,22 +3,22 @@
 #' Captura as propostas recebidas para o item
 #'
 #' @param html_doc documento xml referente a ata de um pregao eletronico
-#' @param item_id string com o numero do item
+#' @param indice_item string com o numero do item
 #'
 #' @return dataframe com dados sobre as propostas
 #' @export
-get_propostas <- function(html_doc, item_id, quietly = TRUE) {
+get_propostas <- function(html_doc, indice_item, quietly = TRUE) {
 
   if (!quietly) {
-    message(str_c(' ---- Capturando propostas do Item ', item_id))
+    message(str_c(' ---- Capturando propostas do Item ', indice_item))
   }
 
   table_node <- html_node(html_doc,
-                          xpath = str_c('//body/table/tbody/tr/td[contains(text(), "Item: ', item_id, ' - ")]/../following-sibling::tr[1]/td/table/tbody/tr/td/b[text()="Propostas"]/ancestor::table[1]'))
+                          xpath = str_c('//body/table/tbody/tr/td[contains(text(), "Item: ', indice_item, ' - ")]/../following-sibling::tr[1]/td/table/tbody/tr/td/b[text()="Propostas"]/ancestor::table[1]'))
 
   if (length(table_node) == 0) {
     if (!quietly) {
-      message(str_c(' ---- Propostas do Item ', item_id, ' nao encontradas'))
+      message(str_c(' ---- Propostas do Item ', indice_item, ' nao encontradas'))
     }
     return(NA)
   }

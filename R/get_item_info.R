@@ -8,7 +8,7 @@
 #' @return Lista com strings e dataframes
 #'
 #' @export
-get_item_info <- function(item_node, item_info = c('item_id', 'descricao', 'descricao_complementar', 'quantidade',
+get_item_info <- function(item_node, item_info = c('indice_item', 'descricao', 'descricao_complementar', 'quantidade',
                                               'valor_estimado', 'unidade_fornecimento', 'tratamento_diferenciado',
                                               'decreto_7174', 'margem_preferencia', 'situacao', 'resultado',
                                               'propostas', 'lances')) {
@@ -27,7 +27,7 @@ get_item_info <- function(item_node, item_info = c('item_id', 'descricao', 'desc
 
   info_df_list <- purrr::map(.x = info_df,
                             ~ list(get_item_info_df(html_doc = item_node,
-                                                id_item = info_chr_list[["item_id"]],
+                                                id_item = info_chr_list[["indice_item"]],
                                                 item_info = .x))) %>%
     purrr::set_names(info_df)
 

@@ -1,5 +1,5 @@
 xpaths <-  list(
-  item_id = 'self::td',
+  indice_item = 'self::td',
   descricao  =  'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../../../tr[1]/td',
   descricao_complementar = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/..',
   quantidade  = 'ancestor::tbody[1]//*[contains(text()," Complementar: ")]/../../..//td//*[contains(text(),"Quantidade:")]/..',

@@ -1,14 +1,14 @@
 #' Captura registro de lances de desempate de microempresa ou empresa de pequeno porte
 #'
 #' @param html_doc documento xml referente a ata de um pregao eletronico
-#' @param item_id string com o numero do item
+#' @param indice_item string com o numero do item
 #'
 #' @return dataframe com os lances de desempate ou string 'Sem lances de desempate'. Na maior parte dos pregoes, nao ha lances de desempate
 #' @export
-get_lances_desempate_ME_EPP <- function(html_doc, item_id) {
+get_lances_desempate_ME_EPP <- function(html_doc, indice_item) {
 
   table_node <- html_node(html_doc,
-                                    xpath = str_c('//body/table/tbody/tr/td[contains(text(), "Item: ', item_id, ' - ")]/../following-sibling::tr[3]/td/table/tbody/tr/td[contains(text(), "esempate")]/ancestor::table[1]'))
+                                    xpath = str_c('//body/table/tbody/tr/td[contains(text(), "Item: ', indice_item, ' - ")]/../following-sibling::tr[3]/td/table/tbody/tr/td[contains(text(), "esempate")]/ancestor::table[1]'))
 
   if (length(table_node) == 0) {
     return(NA)
