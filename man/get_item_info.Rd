@@ -7,7 +7,8 @@
 get_item_info(item_node, item_info = c("indice_item", "descricao",
   "descricao_complementar", "quantidade", "valor_estimado",
   "unidade_fornecimento", "tratamento_diferenciado", "decreto_7174",
-  "margem_preferencia", "situacao", "resultado", "propostas", "lances"))
+  "margem_preferencia", "situacao", "resultado", "propostas", "lances",
+  "fases"))
 }
 \arguments{
 \item{item_node}{xml_node do item}
@@ -18,5 +19,5 @@ get_item_info(item_node, item_info = c("indice_item", "descricao",
 Lista com strings e dataframes
 }
 \description{
-Wrapper de get_item_info_dfs e get_item_info_chr
+Wrapper de get_item_info_dfs e get_item_info_chr, com opcao adicional de extrair data/hora das etapas da fase da lances.
 }

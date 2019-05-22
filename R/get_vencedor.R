@@ -11,6 +11,6 @@ get_vencedor <- function(resultado) {
     stop("\'resultado\' must be a character string")
   }
 
-  str_extract(x, '(?<=Aceito para: ).+?(?=,)')
+  str_extract(resultado, '(?<=Aceito para: ).+?(?=,)')
 
 }
