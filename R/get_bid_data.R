@@ -16,7 +16,7 @@ get_bid_data <- function(html_doc,
                          item_info = c('indice_item', 'descricao', 'descricao_complementar', 'quantidade',
                                        'valor_estimado', 'unidade_fornecimento', 'tratamento_diferenciado',
                                        'decreto_7174', 'margem_preferencia', 'situacao', 'resultado',
-                                       'propostas', 'lances', 'fases'),
+                                       'propostas', 'lances', 'eventos_item', 'fases'),
                          indices = 'all'
                          ) {
 

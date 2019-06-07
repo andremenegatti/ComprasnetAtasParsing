@@ -44,7 +44,11 @@ get_item_info <- function(item_node, item_info = c('indice_item', 'descricao', '
     info_fases_list$iminencia_encerramento <- (df_eventos_item %>% filter(str_detect(Evento, 'Imin.{1,3}ncia de Encerramento')))$Data
     info_fases_list$inicio_fase_aleatoria <- (df_eventos_item %>% filter(str_detect(Evento, 'Imin.{1,3}ncia de Encerramento')))[,3] %>%
       str_extract('\\d{2}/\\d{2}/\\d{4} \\d{2}:\\d{2}:\\d{2}')
-    info_fases_list$encerramento_lances <- (df_eventos_item %>% filter(Evento == 'Encerrado'))$Data
+    info_fases_list$inicio_desempate <- (df_eventos_item %>% filter(str_detect(Evento, 'Aguardando Convoca.{1,7}ME/EPP')))[1, 'Data']
+    info_fases_list$item_encerrado <- (df_eventos_item %>% filter(Evento == 'Encerrado'))[1,'Data']
+    info_fases_list$encerramento_lances <- if_else(is.na(info_fases_list$inicio_desempate),
+                                                   info_fases_list$item_encerrado,
+                                                   info_fases_list$inicio_desempate)
   }
 
   info_fases_list <- map(.x = info_fases_list, .f = ~ ifelse(length(.x) == 0, NA, .x))
